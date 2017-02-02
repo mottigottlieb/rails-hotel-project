@@ -236,7 +236,7 @@ Devise.setup do |config|
   # access, but formats like :xml or :json, should return 401.
   #
   # If you have any extra navigational formats, like :iphone or :mobile, you
-  # should add them to the navigational formats lists.
+  # should add them to the na vigational formats lists.
   #
   # The "*/*" below is required to match Internet Explorer requests.
   # config.navigational_formats = ['*/*', :html]
@@ -247,8 +247,8 @@ Devise.setup do |config|
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
-  # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
-  config.omniauth :facebook, '363989027321284', 'bb9f5248135dd0506bf6940832d5368c'
+  
+  config.omniauth :github, '6117033a26a16bc19195', '8476674bcd957fe0ede3548d057595d0c2c32320'
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
