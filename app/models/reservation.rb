@@ -4,3 +4,6 @@ class Reservation < ApplicationRecord
  	has_many :rooms, :through => :reservation_rooms
 
 end
+
+
+ 
