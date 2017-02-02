@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 	
+  get 'reservation/new'
+
+  get 'reservation/create'
+
+  get 'reservation/edit'
+
+  get 'reservation/update'
+
   root to: 'welcome#home'
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
