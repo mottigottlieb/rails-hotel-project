@@ -1,12 +1,7 @@
 Rails.application.routes.draw do
 	
-  get 'reservation/new'
+	resources :reservations
 
-  get 'reservation/create'
-
-  get 'reservation/edit'
-
-  get 'reservation/update'
 
   root to: 'welcome#home'
 

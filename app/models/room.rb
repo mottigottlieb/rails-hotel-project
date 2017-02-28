@@ -4,4 +4,7 @@ class Room < ApplicationRecord
 	has_many :reservations, :through => :reservation_rooms
 	belongs_to :reservation, :optional => true
 
+
+	
+
 end

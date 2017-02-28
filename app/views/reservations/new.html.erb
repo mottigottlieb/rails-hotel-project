@@ -1,0 +1,30 @@
+<%= form_for @reservation do |f| %> 
+
+<p>
+  <%= f.label :checkin %>
+  <%= f.date_select :checkin %><br>
+</p>
+
+<p>
+  <%= f.label :checkout %>
+  <%= f.date_select :checkout %><br>
+</p>   
+
+<p> 
+  <%= f.fields_for :reservation_rooms, reservation.reservation_rooms.build do |room| %>
+    <%= room.label :rooms %>
+    <%= collection_select(:room_id, :rooms, Room.all, :id, :room_number) %> 
+      <%= ff.collection_select(:room_id, Room.all, {:selected => reservation.rooms_ids}, {multiple: true}) %>
+</p>   
+
+ <% end %> 
+ 
+  <%= f.submit %>
+<% end %>
+<!-- 
+
+ <%= f.fields_for :list_topics, list.list_topics.build do |ff| %>
+  <%= ff.label "Edit Topic:"  %><br>
+  <%= ff.collection_select(:topic_id, Topic.all, :id, :name, {:selected => list.topic_ids}, {multiple: true}) %>
+ <% end %>
+ -->

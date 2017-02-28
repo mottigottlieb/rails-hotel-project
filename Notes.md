@@ -1,6 +1,8 @@
 1. Devise 
 	omniauth
 
+
+
 Associations
 	Reservation
 		belongs_to :user, :optional => true
@@ -22,4 +24,7 @@ Associations
 
  
 
-	
+1. a user creates a reservation 
+then he choses a room 
+then a room gets 	
+
